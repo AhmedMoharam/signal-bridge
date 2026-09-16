@@ -1,0 +1,54 @@
+{
+  "$schema": "https://www.schemastore.org/package.json",
+  "name": "opencode-signal",
+  "version": "0.1.0",
+  "description": "Use opencode from Signal — finished replies, questions and permission requests arrive in a Signal group, and your replies drive the session.",
+  "type": "module",
+  "main": "./signal-bridge.ts",
+  "exports": {
+    ".": {
+      "import": "./signal-bridge.ts"
+    }
+  },
+  "files": [
+    "signal-bridge.ts"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "plugin",
+    "signal",
+    "signal-cli",
+    "chat",
+    "remote",
+    "notifications"
+  ],
+  "engines": {
+    "node": ">=18",
+    "opencode": ">=1.18.29"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "author": {
+    "name": "moharam",
+    "email": "amoharam12-dev@yahoo.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/AhmedMoharam/signal-bridge#readme",
+  "bugs": {
+    "url": "https://github.com/AhmedMoharam/signal-bridge/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhmedMoharam/signal-bridge.git"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.18.29 <2"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.18.31",
+    "@types/node": "^22.20.3",
+    "typescript": "^5.9.3"
+  }
+}
