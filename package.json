@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.schemastore.org/package.json",
   "name": "opencode-signal",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Use opencode from Signal — finished replies, questions and permission requests arrive in a Signal group, and your replies drive the session.",
   "type": "module",
   "main": "./signal-bridge.ts",
@@ -28,7 +28,8 @@
     "opencode": ">=1.18.29"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --no-warnings test/run.mjs"
   },
   "author": {
     "name": "moharam",
